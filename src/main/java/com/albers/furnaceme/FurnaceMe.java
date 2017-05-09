@@ -1,5 +1,6 @@
 package com.albers.furnaceme;
 
+import com.albers.furnaceme.configuration.ConfigurationHandler;
 import com.albers.furnaceme.proxy.IProxy;
 import com.albers.furnaceme.reference.Reference;
 import net.minecraftforge.fml.common.Mod;
@@ -19,6 +20,7 @@ public class FurnaceMe {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
 
     }
 
