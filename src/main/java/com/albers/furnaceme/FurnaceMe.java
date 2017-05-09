@@ -14,7 +14,7 @@ public class FurnaceMe {
     @Mod.Instance(Reference.MOD_ID)
     public static FurnaceMe instance;
 
-    @SidedProxy(clientSide = "com.albers.furnaceme.proxy.ClientProxy", serverSide = "com.albers.furnaceme.proxy.ServerProxy")
+    @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
     @Mod.EventHandler
