@@ -1,0 +1,21 @@
+[
+{
+  "modid": "furnaceme",
+  "name": "FurnaceMe",
+  "description": "Used for education purpose",
+  "version": "0.1",
+  "mcversion": "1.11.2",
+  "url": "https://sebalbers.dk",
+  "updateUrl": "",
+  "authorList": [
+    "Sebalbers"
+  ],
+  "credits": "Sebastian Albers",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
