@@ -1,16 +1,22 @@
 package com.albers.furnaceme;
 
+import com.albers.furnaceme.proxy.IProxy;
+import com.albers.furnaceme.reference.Reference;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="furnaceme", name="FurnaceMe", version="1.11.2-0.1")
+@Mod(modid=Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.MOD_VBRSION)
 public class FurnaceMe {
 
-    @Mod.Instance("furnaceme")
+    @Mod.Instance(Reference.MOD_ID)
     public static FurnaceMe instance;
-    
+
+    @SidedProxy(clientSide = "com.albers.furnaceme.proxy.ClientProxy", serverSide = "com.albers.furnaceme.proxy.ServerProxy")
+    public static IProxy proxy;
+
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
 

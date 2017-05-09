@@ -1,7 +1,6 @@
 package com.albers.furnaceme.proxy;
 
-/**
- * Created by Sebastian on 09-05-2017.
- */
-public class CommonProxy implements IProxy {
+
+public abstract class CommonProxy implements IProxy {
+
 }
